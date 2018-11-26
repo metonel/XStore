@@ -1,8 +1,12 @@
 import Link from "next/link";
+import CreateItem from "../components/CreateItem";
+import PleaseSignin from "../components/PleaseSignin";
 
 const Sell = props => (
   <div>
-    <h3>Sell inca aici</h3>
+    <PleaseSignin>
+      <CreateItem />
+    </PleaseSignin>
   </div>
 );
 

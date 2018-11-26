@@ -11,7 +11,7 @@ Router.onRouteChangeComplete = () => {
   NProgress.done();
 };
 Router.onRouteChangeError = () => {
-  console.log("3");
+  NProgress.error();
 };
 
 const Logo = styled.h1`
@@ -58,7 +58,7 @@ const Header = () => (
     <div className="bar">
       <Logo>
         <Link href="/">
-          <a>Sick Fits</a>
+          <a>XStore</a>
         </Link>
       </Logo>
       <Nav />
